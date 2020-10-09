@@ -4,7 +4,7 @@ import '../App.css';
 import { Button } from './Button';
 
 
-const background = require('./image/background.jpg');
+const background = require('./images/background.jpg');
 
 function HomeSection() {
   return (
