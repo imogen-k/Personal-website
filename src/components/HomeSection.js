@@ -2,6 +2,7 @@ import React from 'react';
 import './HomeSection.css';
 import '../App.css';
 import { Button } from './Button';
+import { Link } from 'react-router-dom';
 
 
 const background = require('./images/background.jpg');
@@ -13,6 +14,7 @@ function HomeSection() {
       <h1>IMOGEN KRAAK</h1>
       <p>Full-stack Developer</p>
       <div className='home-btns'>
+      <Link to='/about' onClick={console.log('hey')}>
         <Button
           className='btns'
           buttonStyle='btn--outline'
@@ -20,14 +22,15 @@ function HomeSection() {
         >
           About me
         </Button>
+        </Link>
+        <Link to='/projects' onClick={console.log('hey')}>
         <Button
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-          onClick={console.log('hey')}
-        >
-          Projects <i className='fas fa-terminal' />  
+        >Projects <i className='fas fa-terminal' />  
         </Button>
+        </Link>
       </div>
     </div>
   );

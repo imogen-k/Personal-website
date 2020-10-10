@@ -30,7 +30,7 @@ function NavBar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            Imogen Kraak
+            IK
         </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -70,7 +70,9 @@ function NavBar() {
             </Link>
             </li>
           </ul>
+          <Link to='/contact'>
           {button && <Button buttonStyle='btn--outline'>Contact</Button>}
+          </Link>
         </div>
       </nav>
     </>
